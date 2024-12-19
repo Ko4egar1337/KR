@@ -1,0 +1,779 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+
+html, body
+{
+    height: 100%;
+}
+
+.body
+{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    background-color: rgb(230, 230, 230);
+}
+
+
+
+
+
+
+.header
+{
+    z-index: 199;
+
+    display: grid;
+    grid-template-columns: minmax(1em, 2fr) max-content minmax(1em, 2fr);
+    overflow-wrap: break-word;
+
+    width: 100%;
+    max-width: 1600px;
+    min-width: 360px;
+
+
+    background-color: rgba(70,70,70,0.3);
+}
+
+.header *
+{
+    user-select: none;
+}
+
+
+.aside_nav_bar
+{
+    z-index: 999;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+
+    width: 12em;
+    height: 100%;
+
+    background-color: rgb(42, 42, 42);
+
+    transition: .2s;
+}
+
+.aside_nav_bar a
+{
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+
+    font-size: 16px;
+
+    color: white;
+    text-decoration: none;
+}
+
+.aside_nav_bar a:hover
+{
+    background-color: rgb(156, 156, 156);
+}
+
+.aside_account_form
+{
+    display: none;
+    position: absolute;
+    justify-self: center;
+    
+    justify-content: center;
+    align-items: center;
+    
+
+    margin-top: 8em;
+
+    width: 900px;
+    max-width: 90%;
+
+    height: 420px;
+    max-height: 90%;
+
+    z-index: 999;
+
+    border-radius: 24px;
+
+    /* background-color: rgba(124, 140, 70, 1); */
+    background-color: rgb(214, 214, 214);
+}
+
+.exit
+{
+    position: absolute;
+    top: 2em;
+    right: 3em;
+
+    width: 2em;
+    height: 2em;
+
+    background-image: url("./src/img/close.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.account_aside_div
+{
+    width: fit-content;
+    max-width: 90%;
+    padding-inline: 2em;
+
+    /* background-color: rgba(140, 70, 70, 0.5); */
+    background-color: transparent;
+}
+
+.account_aside_div_span
+{
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+
+    font-size: 32px;
+
+}
+
+.account_form
+{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-left: 1em;
+    margin-right: 1em;
+
+    padding-inline: 2em;
+    padding-top: 3em;
+
+    min-width: 30%;
+    width: 20em;
+    max-width: 90%;
+
+
+    /* background-color: rgba(76, 179, 188, .5); */
+    background-color: transparent;
+}
+
+.account_form *
+{
+    margin-block: 1em;
+}
+
+.input
+{
+    display: flex;
+    flex-direction: column;
+    
+    padding-inline: 1em;
+
+    width: 24em;
+    max-width: 90%;
+
+    height: 2em;
+
+    border-radius: 2px;
+    border: 1px solid black;
+
+    background-color: transparent;
+    
+    font-size: 18px;
+}
+
+.submit_button
+{
+    width: 8em;
+    height: 2em;
+
+    border-radius: 24px ;
+
+    background-color: rgba(168, 172, 175, 0.8);
+    color: white;
+
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+
+    font-size: 16px;
+}
+
+.submit_button:hover
+{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+
+
+.burger_menu
+{
+    display: none;
+    font-size: 24px;
+}
+
+.burger_menu:hover
+{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.header_left
+{
+    align-content: center;
+}
+
+.header_left div
+{
+    padding: 1em;
+}
+
+.account
+{
+    margin-inline: 1em;
+
+    height: 3em;
+
+    /* background-color: gold; */
+}
+
+.account:hover
+{
+    cursor: pointer;
+}
+
+
+.account.default_hidden
+{
+
+    display: none;
+}
+
+
+
+.header_center
+{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 1em 2em 1em;
+
+
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: rgba(140, 70, 70, 0.5) */
+}
+
+.site_name
+{
+    text-align: center;
+
+
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 32px;
+
+    color: rgb(0, 18, 108);
+}
+
+
+
+
+.header_right
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    /* display: grid;
+    grid-template-columns: minmax(1em, 2fr) 1fr minmax(1em, 2fr);
+    overflow-wrap: break-word; */
+
+
+    /* background-color: rgba(70, 70, 70, 0.5) */
+}
+
+.header_right a
+{
+    color: black;
+
+    text-decoration: none;
+    user-select: none;
+}
+
+
+
+.navigation_button
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 1em;
+    padding-block: 0.5em;
+    text-align: center;
+    margin-inline: 4px;
+
+    width: auto;
+    height: 2em;
+
+    border-radius: 4px;
+    font-family:"Merriweather", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+
+
+    transition: background-color 0.2s, color 1s;
+}
+
+.navigation_button:hover
+{
+    background-color: rgba(70, 70, 70, 0.2);
+    color: white;
+    
+    transition: background-color 0.2s, color 1s;
+}
+
+
+
+
+
+
+
+.main
+{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    flex-grow: 1;
+
+    width: 100%;
+    max-width: 1600px;
+    min-width: 360px;
+
+    /* background-color: rgba(124, 140, 70, 0.5); */
+    background-color: rgb(220,220,220);
+}
+
+.article
+{
+    display: flex;
+
+    width: 100%;
+}
+
+.info
+{
+    display: flex;
+    justify-content: center;
+
+    margin-block: 4em 2em;
+
+    background-color: rgba(120,120,200,0.3);
+}
+
+.main_info
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-block: 8em;
+    padding: 1em;
+
+    /* background-color: rgba(120,120,200,0.7); */
+}
+
+.span.top_info_span
+{
+    text-align: center;
+
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+
+    font-size: 32px;
+
+}
+
+.span.bottom_info_span
+{
+    text-align: center;
+    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 24px; 
+
+}
+
+
+
+
+
+.article
+{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 100%;
+    
+    background-color: rgba(161, 183, 194, 0.3);
+
+    margin-block: 4em;
+}
+
+
+
+.article_naming
+{
+    display: flex;
+    flex-direction: column;
+
+    margin-block: 4em 0em;
+    
+    align-items: center;
+    /* background-color: rgb(173, 126, 40); */
+}
+
+.article_naming span
+{
+    font-family: "Merriweather", serif;
+    font-size: 32px;
+
+    font-weight: 700;
+}
+
+
+
+
+
+.article_core
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 90%;
+
+    margin-block: 4em;
+    padding-block: 4em;
+
+    align-items: center;
+}
+
+.sec_text
+{
+    width: fit-content;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: black;
+
+    
+}
+
+.sec_text *
+{
+    padding: 1em 2em 2em 2em;
+    
+    line-height: 1.6;
+}
+
+.sec_text p
+{
+    text-indent: 15%;
+}
+
+.sec_img
+{
+
+    background-image: url("./src/img/recession_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 36em;
+    max-width: 90%;
+    height: 20em;
+    max-height: 90%;
+
+    margin-block: 2em;
+    
+
+
+    background-color: antiquewhite;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer
+{
+    width: 100%;
+    max-width: 1600px;
+    min-width: 360px;
+
+    min-height: fit-content;
+    height: 10em;
+    
+
+    background-color: rgb(125, 137, 178);
+}
+
+
+.footer_bottom
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_div
+{
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.footer_div a
+{
+    max-width: 90%;
+    margin: 2em 1em 2em 1em;
+
+    /* background-color: rgba(40,150,250,0.4); */
+    text-decoration: none;
+    color: white;
+
+    font-weight: 700;
+}
+
+.footer_div a:hover
+{
+    opacity: .8;
+    scale: 1.2;
+}
+
+.copyright
+{
+    margin: 1em;
+    color: white;
+}
+
+
+
+
+
+
+
+.footer_top
+{
+    /* padding: 1em; */
+
+    /* background-color: aqua; */
+}
+
+.footer_top_info
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-block: 1em;
+
+    width: 100%;   
+    
+    /* background-color: red; */
+
+    color: white;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+
+    font-size: 16px;
+}
+
+.footer_social_media
+{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+
+    width: 100%;
+
+    /* background-color: red; */
+}
+
+.footer_logo
+{
+    min-width: 4em;
+    min-height: 4em;
+
+    margin: 4px;
+
+    /* background-color: aqua; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    opacity: 0.6;
+
+    transition: .2s;
+}
+
+.footer_logo:hover
+{
+    scale: 1.1;
+    
+    transition: .2s;
+}
+
+#logo_youtube
+{
+    background-image: url("./src/img/yt.png");
+}
+
+#logo_vk
+{
+    background-image: url("./src/img/vk.png");
+}
+
+#logo_tg
+{
+    background-image: url("./src/img/tg.png");
+}
+
+
+
+
+
+
+
+
+
+
+::placeholder
+{
+    color: black;
+
+    font-size: 18px;
+}
+
+
+/* Стили к событиям */
+
+
+@media screen and (width < 900px)
+{
+    .header
+    {
+        display: grid;
+        grid-template-columns:2fr 1fr;
+        overflow-wrap: break-word;
+        /* padding-block: 1em; */
+
+        width: 100%;
+        max-width: 1600px;
+        min-width: 360px;
+    }
+
+    .header_right .navigation_button
+    {
+        display: none;
+    }
+
+    .burger_menu
+    {
+        display: block;
+    }
+
+    .account.default_hidden
+    {
+        display: block;
+    }
+
+    .account.default_shown
+    {
+        display: none;
+    }
+    
+    .aside_account_form
+    {
+        flex-direction: column;
+    }
+
+    .header_left
+    {
+        display: none;
+    }
+
+    .header_right
+    {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .header_right *
+    {
+        margin-block: 1em;
+    }
+
+}
+
+
+@media screen and (width >= 900px)
+{
+    .aside_nav_bar
+    {
+        display: none !important;
+    }
+}

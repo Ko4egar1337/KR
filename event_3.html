@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head lang="ru">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles_event_3.css">
+
+        <title> Террористические акты 11 сентября 2001 года </title>
+    </head>
+    <body id="body" class="body">
+
+        <header class="header">
+            <aside id="aside_nav_bar" class="aside_nav_bar">
+                <a href="./index.html"> <div class="navigation_button"> Главная страница </div> </a>
+
+                <a href="./events.html"> <div class="navigation_button"> Список событий </div> </a>
+
+                <a id="random_article_aside" href="Случайная статья"> <div class="navigation_button"> Случайная статья </div> </a>
+
+                <a href="./favourite.html"> <div class="navigation_button"> Избранное </div> </a>
+
+                <a href="./media.html"> <div class="navigation_button"> О нас </div> </a>
+            </aside>
+
+            <aside id="account_aside" class="aside_account_form">
+
+                <div class="exit" onclick="close_account_aside()">
+                   
+                </div>
+
+                <div class="account_aside_div">
+                    <span class="account_aside_div_span"> Вход </span>
+                </div>
+                
+                <form class="account_form">
+                    <input class="input" required="" type="email" placeholder="Эл. почта">
+                    <input class="input" required="" type="password" placeholder="Пароль">
+                    
+                    <button class="submit_button" type="submit"> Войти </button>
+                </form>
+                 
+            </aside>
+            <script>
+                function close_account_aside()
+                {
+                    document.getElementById("body").style.overflow = "scroll";
+                    document.getElementById("account_aside").style.display = "none";
+                }
+            </script>
+
+
+            <div class="header_left">
+                <div>
+                    <div onclick="account_aside_display()"> <img class="account default_shown" src="./src/img/account.png" alt="account.png"> </div>
+                </div>
+            </div>
+            <script>
+                function account_aside_display()
+                {
+                    if (document.getElementById("account_aside").style.display == "flex")
+                    {
+                        document.getElementById("account_aside").style.display = "none";
+                        document.getElementById("body").style.overflow = "scroll";
+                    }
+                    else
+                    {
+                        document.getElementById("account_aside").style.display = "flex";
+                        document.getElementById("body").style.overflow = "hidden";
+                    }
+                }
+            </script>
+
+
+            <div class="header_center">
+                <span class="site_name"> Громкие события XXI века </span>
+            </div>
+
+
+            <nav class="header_right">
+                <div class="burger_menu" onclick="side_menu_display()">
+                    <span> ☰ </span>
+                </div>
+                <script>
+                    function side_menu_display()
+                    {
+                        if (document.getElementById("aside_nav_bar").style.display == "flex")
+                            document.getElementById("aside_nav_bar").style.display = "none";
+                        else 
+                            document.getElementById("aside_nav_bar").style.display = "flex";
+                    }
+                </script>
+
+                <div>
+                    <div onclick="account_aside_display()"> <img class="account default_hidden" src="./src/img/account.png" alt="account.png"> </div>
+                </div>
+                <script>
+                    function account_aside_display()
+                    {
+                        if (document.getElementById("account_aside").style.display == "flex")
+                        {
+                            document.getElementById("account_aside").style.display = "none";
+                            document.getElementById("body").style.overflow = "scroll";
+                        }
+                        else
+                        {
+                            document.getElementById("account_aside").style.display = "flex";
+                            document.getElementById("body").style.overflow = "hidden";
+                        }
+                    }
+                </script>
+
+                <a href="./index.html"> <div class="navigation_button"> Главная страница </div> </a>
+
+                <a href="./events.html"> <div class="navigation_button"> Список событий </div> </a>
+
+                <a id="random_article" href="Случайная статья"> <div class="navigation_button"> Случайная статья </div> </a>
+
+                <a href="./favourite.html"> <div class="navigation_button"> Избранное </div> </a>
+
+                <a href="./media.html"> <div class="navigation_button"> О нас </div> </a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <article class="article">
+                <section class="article_naming">
+                    <span> Теракты 11 сентября 2001 года </span>
+                </section>
+                
+                <section class="article_core">
+                    <div class="sec_text">
+                        <p>
+                            11 сентября 2001 года мир стал свидетелем одного из самых трагичных и шокирующих событий в истории современности. Серия террористических атак, организованных экстремистской группировкой "Аль-Каида", потрясла не только США, но и весь мир. Эти события стали поворотным моментом в глобальной политике, изменив 
+                            подходы к безопасности, международным отношениям и антитеррористической борьбе.
+                            </p>
+                    </div>
+
+                    <div class="sec_img">
+                        
+                    </div>
+                    
+                    <div class="sec_text">
+                        <h1> 1. Ход событий 11 сентября 2001 года </h1>
+                        <p>
+                            Утро 11 сентября началось, как и любой другой день в США, но вскоре
+                             оно превратилось в день, который изменил ход истории. Два пассажирских самолёта были угнаны террористами, и все они стали орудием разрушения.                       
+                            </p>
+                        
+                        <p>
+                            В 8:46 утра по местному времени первый самолёт, American Airlines Flight 11, врезался в северную башню Всемирного торгового центра в Нью-Йорке. Через 17 минут второй самолёт, United Airlines Flight 175, ударил в южную башню. Взрывы и последствия этих ударов вызвали массовые 
+                            разрушения, пожары, и обе башни в конце концов обрушились в течение нескольких часов.
+                        </p>
+
+                        <h1> 2. Человеческие потери и последствия </h1>
+                        <p>
+                            Теракты 11 сентября привели к огромным человеческим потерям. По официальным данным, погибло почти 3000 человек, в том числе граждане 90 стран. Более 6000 человек получили ранения. Многие пострадавшие не могли получить
+                             необходимую медицинскую помощь сразу из-за масштаба разрушений, а также проблем с логистикой.
+                        </p>
+                        
+                        <h1> 3. Глобальные последствия и изменение политики безопасности </h1>
+                        <p>
+                            11 сентября привело к тому, что терроризм стал главным глобальным вызовом для безопасности. В ряде стран, таких как Ирак, Ливия и Сирия, стали возникать новые угрозы, а терроризм стал одной из ключевых тем международной политики.                   
+                        </p>
+                        
+                        </div>
+                </section>
+
+                <section class="article_ending">
+
+                </section>
+            </article>
+        </main>
+
+
+
+        <footer class="footer">
+            <div class="footer_bottom">
+                <div class="footer_div">
+                    <a href="./index.html"> <div class="navigation_button"> Главная страница </div> </a>
+
+                    <a href="./events.html"> <div class="navigation_button"> Список событий </div> </a>
+    
+                    <a id="random_article_bottom" href="Случайная статья"> <div class="navigation_button"> Случайная статья </div> </a>
+    
+                    <a href="./favourite.html"> <div class="navigation_button"> Избранное </div> </a>
+    
+                    <a href="./media.html"> <div class="navigation_button"> О нас </div> </a>
+                </div>
+            </div>
+
+            <div class="footer_top">
+                <div class="footer_top_info"> 
+                    Мы в соц сетях 
+                </div>
+                <div class="footer_social_media">
+                    
+                    <a href="https://www.youtube.com"> <div id="logo_youtube" class="footer_logo">
+                        
+                    </div> </a>
+                    <a href="https://vk.com"> <div id="logo_vk" class="footer_logo">
+                          
+                    </div> </a>
+                    <a href="https://t.me/telegram"><div id="logo_tg" class="footer_logo">
+                       
+                    </div></a>
+                </div>
+                <div class="footer_div">
+                    <span class="copyright"> Copyright © Le eventes nominables. All rights reserved. </span>
+                </div>
+            </div>
+        </footer>
+
+        
+    </body>
+    <script src="scripts_event_3.js"></script>
+</html>

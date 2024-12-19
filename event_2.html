@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head lang="ru">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles_event_2.css">
+
+        <title> Война в Ираке 2003-2011 </title>
+    </head>
+    <body id="body" class="body">
+
+        <header class="header">
+            <aside id="aside_nav_bar" class="aside_nav_bar">
+                <a href="./index.html"> <div class="navigation_button"> Главная страница </div> </a>
+
+                <a href="./events.html"> <div class="navigation_button"> Список событий </div> </a>
+
+                <a id="random_article_aside" href="Случайная статья"> <div class="navigation_button"> Случайная статья </div> </a>
+
+                <a href="./favourite.html"> <div class="navigation_button"> Избранное </div> </a>
+
+                <a href="./media.html"> <div class="navigation_button"> О нас </div> </a>
+            </aside>
+
+            <aside id="account_aside" class="aside_account_form">
+
+                <div class="exit" onclick="close_account_aside()">
+                   
+                </div>
+
+                <div class="account_aside_div">
+                    <span class="account_aside_div_span"> Вход </span>
+                </div>
+                
+                <form class="account_form">
+                    <input class="input" required="" type="email" placeholder="Эл. почта">
+                    <input class="input" required="" type="password" placeholder="Пароль">
+                    
+                    <button class="submit_button" type="submit"> Войти </button>
+                </form>
+                 
+            </aside>
+            <script>
+                function close_account_aside()
+                {
+                    document.getElementById("body").style.overflow = "scroll";
+                    document.getElementById("account_aside").style.display = "none";
+                }
+            </script>
+
+
+            <div class="header_left">
+                <div>
+                    <div onclick="account_aside_display()"> <img class="account default_shown" src="./src/img/account.png" alt="account.png"> </div>
+                </div>
+            </div>
+            <script>
+                function account_aside_display()
+                {
+                    if (document.getElementById("account_aside").style.display == "flex")
+                    {
+                        document.getElementById("account_aside").style.display = "none";
+                        document.getElementById("body").style.overflow = "scroll";
+                    }
+                    else
+                    {
+                        document.getElementById("account_aside").style.display = "flex";
+                        document.getElementById("body").style.overflow = "hidden";
+                    }
+                }
+            </script>
+
+
+            <div class="header_center">
+                <span class="site_name"> Громкие события XXI века </span>
+            </div>
+
+
+            <nav class="header_right">
+                <div class="burger_menu" onclick="side_menu_display()">
+                    <span> ☰ </span>
+                </div>
+                <script>
+                    function side_menu_display()
+                    {
+                        if (document.getElementById("aside_nav_bar").style.display == "flex")
+                            document.getElementById("aside_nav_bar").style.display = "none";
+                        else 
+                            document.getElementById("aside_nav_bar").style.display = "flex";
+                    }
+                </script>
+
+                <div>
+                    <div onclick="account_aside_display()"> <img class="account default_hidden" src="./src/img/account.png" alt="account.png"> </div>
+                </div>
+                <script>
+                    function account_aside_display()
+                    {
+                        if (document.getElementById("account_aside").style.display == "flex")
+                        {
+                            document.getElementById("account_aside").style.display = "none";
+                            document.getElementById("body").style.overflow = "scroll";
+                        }
+                        else
+                        {
+                            document.getElementById("account_aside").style.display = "flex";
+                            document.getElementById("body").style.overflow = "hidden";
+                        }
+                    }
+                </script>
+
+                <a href="./index.html"> <div class="navigation_button"> Главная страница </div> </a>
+
+                <a href="./events.html"> <div class="navigation_button"> Список событий </div> </a>
+
+                <a id="random_article" href="Случайная статья"> <div class="navigation_button"> Случайная статья </div> </a>
+
+                <a href="./favourite.html"> <div class="navigation_button"> Избранное </div> </a>
+
+                <a href="./media.html"> <div class="navigation_button"> О нас </div> </a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <article class="article">
+                <section class="article_naming">
+                    <span> Война в Ираке 2003-2011 </span>
+                </section>
+                
+                <section class="article_core">
+                    <div class="sec_text">
+                        <p>
+                            Война в Ираке 2003 года стала одним из самых значимых военных
+                             конфликтов начала XXI века. Она оказала огромное влияние на политическую карту 
+                            Ближнего Востока, мировую безопасность и геополитическую ситуацию в целом. 
+                            </p>
+                    </div>
+
+                    <div class="sec_img">
+                        
+                    </div>
+                    
+                    <div class="sec_text">
+                        <h1> 1. Предпосылки войны </h1>
+                        <p>
+                            С момента прихода к власти Саддама Хусейна в 1979 году Ирак стал одним из наиболее авторитарных и жестоких режимов в арабском мире. Хусейн вел агрессивную внешнюю политику, что привело к нескольким вооружённым конфликтам, включая войну с Ираном (1980-1988) и вторжение в Кувейт в 1990 году, что стало причиной войны с коалицией во главе с США в 1991 году. После окончания войны Ирак 
+                            оказался под санкциями ООН и ограничениями на развитие оружия массового поражения (ОМП).                        </p>
+
+                        <h1> 2. Ход войны </h1>
+                        <p>
+                            Военные действия в Ираке развивались очень быстро. В первые недели операции войска коалиции столкнулись с ограниченным сопротивлением со стороны иракской армии, которая, несмотря на численное превосходство, не смогла противостоять современным вооружениям США и Великобритании. Саддам Хусейн и многие члены его 
+                            правительства скрылись, и в апреле 2003 года войска коалиции захватили Багдад, свергнув режим Хусейна.                        </p>
+
+                        <h1> 3. Последствия войны </h1>
+                        <p>
+                            Война в Ираке оказала значительное влияние на ситуацию в соседних странах и на глобальную безопасность. Разрушение иракского государства привело к усилению региональных конфликтов, особенно в Сирии, где война в Ираке 
+                            послужила катализатором для роста влияния радикальных группировок.                        </p>
+                        
+                        <p>
+                            После свержения Саддама Хусейна в Ираке начался период политической нестабильности. Возникновение и усиление вооружённых группировок, таких как "Аль-Каида в Ираке" (позже ставшая Исламским государством), привело к серьёзной угрозе внутренней безопасности страны. Ирак 
+                            столкнулся с межконфессиональными столкновениями, в которых участвовали шииты, сунниты и курды.                        </p>
+                    </div>
+                </section>
+
+                <section class="article_ending">
+
+                </section>
+            </article>
+        </main>
+
+
+
+        <footer class="footer">
+            <div class="footer_bottom">
+                <div class="footer_div">
+                    <a href="./index.html"> <div class="navigation_button"> Главная страница </div> </a>
+
+                    <a href="./events.html"> <div class="navigation_button"> Список событий </div> </a>
+    
+                    <a id="random_article_bottom" href="Случайная статья"> <div class="navigation_button"> Случайная статья </div> </a>
+    
+                    <a href="./favourite.html"> <div class="navigation_button"> Избранное </div> </a>
+    
+                    <a href="./media.html"> <div class="navigation_button"> О нас </div> </a>
+                </div>
+            </div>
+
+            <div class="footer_top">
+                <div class="footer_top_info"> 
+                    Мы в соц сетях 
+                </div>
+                <div class="footer_social_media">
+                    
+                    <a href="https://www.youtube.com"> <div id="logo_youtube" class="footer_logo">
+                        
+                    </div> </a>
+                    <a href="https://vk.com"> <div id="logo_vk" class="footer_logo">
+                          
+                    </div> </a>
+                    <a href="https://t.me/telegram"><div id="logo_tg" class="footer_logo">
+                       
+                    </div></a>
+                </div>
+                <div class="footer_div">
+                    <span class="copyright"> Copyright © Le eventes nominables. All rights reserved. </span>
+                </div>
+            </div>
+        </footer>
+
+        
+    </body>
+    <script src="scripts_event_2.js"></script>
+</html>

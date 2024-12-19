@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head lang="ru">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles_event_1.css">
+
+        <title> COVID-19 </title>
+    </head>
+    <body id="body" class="body">
+
+        <header class="header">
+            <aside id="aside_nav_bar" class="aside_nav_bar">
+                <a href="./index.html"> <div class="navigation_button"> Главная страница </div> </a>
+
+                <a href="./events.html"> <div class="navigation_button"> Список событий </div> </a>
+
+                <a id="random_article_aside" href="Случайная статья"> <div class="navigation_button"> Случайная статья </div> </a>
+
+                <a href="./favourite.html"> <div class="navigation_button"> Избранное </div> </a>
+
+                <a href="./media.html"> <div class="navigation_button"> О нас </div> </a>
+            </aside>
+
+            <aside id="account_aside" class="aside_account_form">
+
+                <div class="exit" onclick="close_account_aside()">
+                   
+                </div>
+
+                <div class="account_aside_div">
+                    <span class="account_aside_div_span"> Вход </span>
+                </div>
+                
+                <form class="account_form">
+                    <input class="input" required="" type="email" placeholder="Эл. почта">
+                    <input class="input" required="" type="password" placeholder="Пароль">
+                    
+                    <button class="submit_button" type="submit"> Войти </button>
+                </form>
+                 
+            </aside>
+            <script>
+                function close_account_aside()
+                {
+                    document.getElementById("body").style.overflow = "scroll";
+                    document.getElementById("account_aside").style.display = "none";
+                }
+            </script>
+
+
+            <div class="header_left">
+                <div>
+                    <div onclick="account_aside_display()"> <img class="account default_shown" src="./src/img/account.png" alt="account.png"> </div>
+                </div>
+            </div>
+            <script>
+                function account_aside_display()
+                {
+                    if (document.getElementById("account_aside").style.display == "flex")
+                    {
+                        document.getElementById("account_aside").style.display = "none";
+                        document.getElementById("body").style.overflow = "scroll";
+                    }
+                    else
+                    {
+                        document.getElementById("account_aside").style.display = "flex";
+                        document.getElementById("body").style.overflow = "hidden";
+                    }
+                }
+            </script>
+
+
+            <div class="header_center">
+                <span class="site_name"> Громкие события XXI века </span>
+            </div>
+
+
+            <nav class="header_right">
+                <div class="burger_menu" onclick="side_menu_display()">
+                    <span> ☰ </span>
+                </div>
+                <script>
+                    function side_menu_display()
+                    {
+                        if (document.getElementById("aside_nav_bar").style.display == "flex")
+                            document.getElementById("aside_nav_bar").style.display = "none";
+                        else 
+                            document.getElementById("aside_nav_bar").style.display = "flex";
+                    }
+                </script>
+
+                <div>
+                    <div onclick="account_aside_display()"> <img class="account default_hidden" src="./src/img/account.png" alt="account.png"> </div>
+                </div>
+                <script>
+                    function account_aside_display()
+                    {
+                        if (document.getElementById("account_aside").style.display == "flex")
+                        {
+                            document.getElementById("account_aside").style.display = "none";
+                            document.getElementById("body").style.overflow = "scroll";
+                        }
+                        else
+                        {
+                            document.getElementById("account_aside").style.display = "flex";
+                            document.getElementById("body").style.overflow = "hidden";
+                        }
+                    }
+                </script>
+
+                <a href="./index.html"> <div class="navigation_button"> Главная страница </div> </a>
+
+                <a href="./events.html"> <div class="navigation_button"> Список событий </div> </a>
+
+                <a id="random_article" href="Случайная статья"> <div class="navigation_button"> Случайная статья </div> </a>
+
+                <a href="./favourite.html"> <div class="navigation_button"> Избранное </div> </a>
+
+                <a href="./media.html"> <div class="navigation_button"> О нас </div> </a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <article class="article">
+                <section class="article_naming">
+                    <span> COVID-19 </span>
+                </section>
+                
+                <section class="article_core">
+                    <div class="sec_text">
+                        <p>
+                        Пандемия COVID-19, вызванная коронавирусом SARS-CoV-2,
+                             стала одним из самых значимых событий в мировой истории XXI века.
+                              Она охватила весь мир, изменив способы взаимодействия людей, повседневную жизнь,
+                               работу и экономику. В этой статье мы рассмотрим основные аспекты пандемии, её влияние
+                                на различные сферы жизни и уроки, которые мы можем извлечь из произошедшего.
+                            </p>
+                    </div>
+
+                    <div class="sec_img">
+                        
+                    </div>
+                    
+                    <div class="sec_text">
+                        <h1> 1. Происхождение и распространение вируса </h1>
+                        <p>
+                            COVID-19 был впервые выявлен в китайском городе Ухань в декабре 2019 года. Исходно заболевание передавалось от животных к людям, но со временем вирус приобрёл способность к передаче от человека к человеку. Быстро распространяясь по миру, в марте 2020 года Всемирная организация здравоохранения (ВОЗ) объявила пандемию.
+                        </p>
+
+                        <h1> 2. Симптомы и формы болезни </h1>
+                        <p>
+                            Инфекция COVID-19 имеет широкий спектр проявлений — от лёгких симптомов (кашель, лихорадка, утомляемость) до тяжёлых форм, сопровождающихся одышкой, пневмонией и даже смертью. Особую угрозу болезнь представляла для пожилых людей и тех, кто страдал от хронических заболеваний, таких как сердечно-сосудистые болезни, диабет и заболевания дыхательных путей.
+                        </p>
+
+                        <h1> 3. Экономические последствия </h1>
+                        <p>
+                            Пандемия оказала значительное влияние на мировую экономику. Меры локдаунов и ограничения на передвижение людей вызвали снижение производства, резкое сокращение числа рабочих мест, падение уровня потребления и экономическую нестабильность. Множество малых и средних предприятий было вынуждено закрыться, что привело к росту уровня безработицы.
+                        </p>
+                        
+                        <p>
+                            Некоторые сектора, такие как туризм, гостиничный бизнес, развлечения и авиация, понесли особенно большие потери. В то же время отрасли, связанные с онлайн-торговлей, медицинскими услугами и IT, значительно выиграли от изменений, вызванных пандемией.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="article_ending">
+
+                </section>
+            </article>
+        </main>
+
+
+
+        <footer class="footer">
+            <div class="footer_bottom">
+                <div class="footer_div">
+                    <a href="./index.html"> <div class="navigation_button"> Главная страница </div> </a>
+
+                    <a href="./events.html"> <div class="navigation_button"> Список событий </div> </a>
+    
+                    <a id="random_article_bottom" href="Случайная статья"> <div class="navigation_button"> Случайная статья </div> </a>
+    
+                    <a href="./favourite.html"> <div class="navigation_button"> Избранное </div> </a>
+    
+                    <a href="./media.html"> <div class="navigation_button"> О нас </div> </a>
+                </div>
+            </div>
+
+            <div class="footer_top">
+                <div class="footer_top_info"> 
+                    Мы в соц сетях 
+                </div>
+                <div class="footer_social_media">
+                    
+                    <a href="https://www.youtube.com"> <div id="logo_youtube" class="footer_logo">
+                        
+                    </div> </a>
+                    <a href="https://vk.com"> <div id="logo_vk" class="footer_logo">
+                          
+                    </div> </a>
+                    <a href="https://t.me/telegram"><div id="logo_tg" class="footer_logo">
+                       
+                    </div></a>
+                </div>
+                <div class="footer_div">
+                    <span class="copyright"> Copyright © Le eventes nominables. All rights reserved. </span>
+                </div>
+            </div>
+        </footer>
+
+        
+    </body>
+    <script src="scripts_event_1.js"></script>
+
+</html>
